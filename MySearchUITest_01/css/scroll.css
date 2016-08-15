@@ -1,0 +1,84 @@
+@charset "utf-8";
+* { margin:0; padding:0;}
+body { font-size:12px;}
+
+div.scrollable
+{
+    background-color:#efefef;
+    border:1px solid #ddd;
+    padding:0px 0px 0px 0px;   /*10px 8px;*/
+    width:100%;/*580px;523px;*/
+    height:160px; /*100px;*/
+    margin-top: 0px;
+	display: none;
+}
+
+div.items {
+    height:120px;   /*height of images*/
+    margin-right: 0px;/*10px;*/
+	margin-left: 5px;
+	padding-left: 0px;
+    float:left;
+    width: 90% !important;/*length of the scrolling frame*/
+}
+ 
+div.items a {
+    display:block;
+    float:left;
+	margin-left:2px;
+    margin-right:2px;
+    width:88px;
+    height:88px;
+    background:#BBB;
+    font-size:50px;
+    color:#ccc;
+    line-height:66px;
+    text-decoration:none;
+    text-align:center;
+    cursor:pointer;
+}
+ 
+div.items a:hover {
+    color:#999;    
+	width:160px;
+	height:160px;
+	overflow:auto;
+}
+ 
+div.items a.active {
+    /*background-position:-174px 0;        */
+    color:#555;
+    cursor:default;
+}
+ 
+a.prev
+{
+    background:url(left.png) no-repeat 0 0;
+    display:block;
+    width: 1%;/*18px;*/
+    height:18px;
+    float:left;    
+    margin-top: 50px; /*width between pre/next button and parent elements*/
+    cursor:pointer;
+}
+
+a.next 
+{
+    background-image:url(right.png);
+	display:block;
+    width: 1%;/*18px;*/
+    height:18px;
+    float:right;    
+    margin-top: 50px;/*28px 0 0 0; /*height between pre/next button and parent elements左右切换按钮距离父元素的长度*/
+    cursor:pointer;
+}
+ 
+a.prev:hover {
+    background-position:0 -18px;        
+}
+ 
+a.next:hover {
+    background-position:0 -18px;        
+}
+
+
